@@ -1,0 +1,161 @@
+<html>
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="x-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>&#x1F43E; PAW'S PET SHOP - SERVICE</title>
+
+      <body style="background-color:rgb(161, 213, 219);"></body>
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      
+      <link rel="stylesheet" href="/style4.css">
+        
+        <header>
+            <input type="checkbox" name="" id="toggler">
+            <label for="toggler" class="fas fa-bars"></label>
+        
+            <a href="#" class="logo">&#x1F43E;PAW'S PET SHOP<span>.</span></a>
+        
+            <nav class="navbar">
+                <a href="welcomepage.html">Home</a>
+                <a href="aboutus.html">About Us</a>
+                <a href="product.html">products</a>
+                <a href="service.html">Service</a>
+                <a href="contact.html">contact</a>
+            </nav>
+        
+            <div class="icons">
+                <a href="product.html" class="fas fa-shopping-cart"></a>
+                <a href="contact.html" class="fa fa-mobile"></a>
+            </div>
+        </header>
+        
+        <style> 
+        
+            body,h1 {font-family: "Raleway", sans-serif}
+        
+    
+      
+      
+            .mySlides {display:none;}
+        </style>
+
+       
+    </head>
+
+    <body background="image/lightblue.jpg">
+    <body>
+     
+      
+  
+      <br>
+        <br>
+      
+        <img src="image/catdog2.jpg"  style="width:100%;min-height:350px;max-height:500px;">
+
+
+        <center>
+        <h1>OUR SERVICES</h1>
+        <hr class="w3-border-grey" style="margin:auto;width:40%">
+        </center>
+
+        <br>
+       
+
+         <br>
+
+          </div>
+          <div class="w3-content w3-display-container">
+            <img class="mySlides" src="image/checkup.jpg" style="width:100%">
+            <img class="mySlides" src="image/catdentist.jpg" style="width:100%">
+            <img class="mySlides" src="image/grooming.jpg" style="width:100%">
+            <img class="mySlides" src="image/pharmacy.jpg" style="width:100%">
+            <img class="mySlides" src="image/surgery.jpg" style="width:100%">
+            <img class="mySlides" src="image/pethotel.jpeg" style="width:100%">
+          
+          
+            <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+          </div>
+        
+          
+          <script>
+          var slideIndex = 1;
+          showDivs(slideIndex);
+          
+          function plusDivs(n) {
+            showDivs(slideIndex += n);
+          }
+          
+          function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";  
+            }
+            x[slideIndex-1].style.display = "block";  
+          }
+          </script>
+          
+          <br>
+
+          <!-- Services -->
+<div id="services" class="w3-container w3-padding-32">
+    <div class="w3-row w3-center">
+    
+    <div class="w3-third">
+        <!--Using image as hyperlink for global link-->
+    <a href="video/checkup.mp4"><img src="image/checkupsymbol.png"  style="width:30%">
+   <br>
+   <h4>General Health Check and Wellness Care</h4>
+    </div>
+
+    
+    <div class="w3-third">
+    <a href="video/dentals.mp4"><img src="image/dentalsymbol.png" style="width:30%">
+    <br>
+    <h4>Dental Treatment</h4>
+    </div>
+    
+    <div class="w3-third">
+    <a href="video/grooming.mp4"><img src="image/groomingsymbol.png"  style="width:30%">
+    <br>
+    <h4>Pet Grooming & Spa</h4>
+    </div>
+
+    
+
+    <div class="w3-third">
+        <br>
+        <a href="video/surgery.mp4"><img src="image/surgerysymbol.png" style="width:30%">
+        <br>
+        <h4>General Surgery Procedures</h4>
+        </div>
+
+        <div class="w3-third">
+            <br>
+            <a href="video/pharmacy.mp4"><img src="image/pharmacysymbol.png"  style="width:30%">
+            <br>
+            <h4>In-house Pharmacy</h4>
+            </div>
+
+            <div class="w3-third">
+                <br>
+                <a href="video/petboarding.mp4"><img src="image/pethotelsymbol.png"  style="width:30%">
+                <br>
+                <h4>Pet Boarding & Daycare</h4>
+                </div>
+    </div>
+    </div>
+    <audio controls>
+      <source src="audio/sound1.ogg" type="audio/ogg">
+      <source src="audio/sound1.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    </body>
+</html>
